@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>2D Game Studio · Shokoban & Moto Rush</title>
+  <meta name="description" content="Free mobile games by Foued Dhaya: Shokoban, a box-pushing puzzle game with 510 levels, and Moto Rush, a stunt bike racing game across 8 wild worlds. Get them on Google Play.">
+  <link rel="canonical" href="https://foueddhaya95.github.io/">
+  <meta name="theme-color" content="#FFF7EC" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16111F" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://foueddhaya95.github.io/">
+  <meta property="og:title" content="2D Game Studio · Shokoban & Moto Rush">
+  <meta property="og:description" content="Free mobile games: brain-teasing puzzles and wild stunt racing. Get them on Google Play.">
+  <meta property="og:image" content="https://foueddhaya95.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="assets/fonts/LuckiestGuy-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#games">Skip to the games</a>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="2D Game Studio, back to top">
+        <img src="assets/favicon.png" alt="" width="36" height="36">
+        <span>2D Game Studio</span>
+      </a>
+      <nav aria-label="Games">
+        <a href="#shokoban" class="pill pill--violet">Shokoban</a>
+        <a href="#motorush" class="pill pill--sun">Moto Rush</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ------------------------------------------------------------- hero -->
+    <section class="hero">
+      <div class="hero__float hero__float--a" aria-hidden="true"><img src="assets/shokoban/icon.webp" alt="" width="132" height="132"></div>
+      <div class="hero__float hero__float--b" aria-hidden="true"><img src="assets/motorush/icon.webp" alt="" width="132" height="132"></div>
+      <span class="hero__dot hero__dot--1" aria-hidden="true"></span>
+      <span class="hero__dot hero__dot--2" aria-hidden="true"></span>
+      <span class="hero__dot hero__dot--3" aria-hidden="true"></span>
+
+      <div class="hero__copy">
+        <p class="eyebrow">Indie mobile games by Foued Dhaya</p>
+        <h1 class="display">
+          <span>Small games.</span>
+          <span class="grad">Big fun!</span>
+        </h1>
+        <p class="lead">Brain-teasing puzzles and wild stunt racing. Free to play, quick to pick up and made to put a smile on your face.</p>
+        <div class="hero__cta">
+          <a class="btn btn--violet" href="#shokoban">Play Shokoban</a>
+          <a class="btn btn--sun" href="#motorush">Play Moto Rush</a>
+        </div>
+        <ul class="perks" aria-label="Good to know">
+          <li><span aria-hidden="true">🎁</span> Free</li>
+          <li><span aria-hidden="true">✈️</span> Plays offline</li>
+          <li><span aria-hidden="true">🙌</span> No sign-up</li>
+        </ul>
+      </div>
+      <svg class="hero__wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C 240 100 480 0 720 40 C 960 80 1200 20 1440 50 L1440 90 L0 90 Z"/></svg>
+    </section>
+
+    <div id="games"></div>
+
+    <!-- --------------------------------------------------------- shokoban -->
+    <section id="shokoban" class="game game--shokoban" aria-labelledby="shokoban-title">
+      <div class="game__inner">
+        <div class="phone" data-reveal>
+          <div class="phone__screen">
+            <video src="assets/shokoban/reel.mp4" poster="assets/shokoban/reel-poster.webp" muted loop playsinline preload="metadata" aria-label="Shokoban gameplay video"></video>
+          </div>
+          <button class="sound" type="button" aria-pressed="false"><span class="sound__icon" aria-hidden="true">🔇</span><span class="sound__label">Sound on</span></button>
+        </div>
+
+        <div class="game__copy" data-reveal>
+          <div class="game__head">
+            <img class="game__icon" src="assets/shokoban/icon.webp" alt="Shokoban app icon" width="96" height="96">
+            <h2 id="shokoban-title" class="game__logo"><img src="assets/shokoban/logo.webp" alt="Shokoban" width="900" height="222"></h2>
+          </div>
+          <ul class="chips" aria-label="At a glance">
+            <li>Puzzle</li><li>510 levels</li><li>Offline</li><li>2 players</li>
+          </ul>
+          <p class="game__pitch">Push the crates onto the targets, but think before you push: a crate can't be pulled back out of a corner. Meet the cutest little box-pusher and work through hundreds of brain teasers, from a relaxing warm-up to real head-scratchers.</p>
+          <ul class="features">
+            <li><span class="features__ico" aria-hidden="true">📦</span><span><b>510 levels</b> that get trickier as you go</span></li>
+            <li><span class="features__ico" aria-hidden="true">↩️</span><span><b>Undo</b> a wrong move and try another way</span></li>
+            <li><span class="features__ico" aria-hidden="true">👆</span><span><b>Swipe or tap</b> to move, smooth on any phone</span></li>
+            <li><span class="features__ico" aria-hidden="true">👫</span><span><b>2-player mode</b>: race a friend on one phone</span></li>
+          </ul>
+          <a class="badge" href="https://play.google.com/store/apps/details?id=com.twodStudio.shokoban" target="_blank" rel="noopener">
+            <img src="assets/google-play-badge.png" alt="Get Shokoban on Google Play" width="282" height="84">
+          </a>
+        </div>
+      </div>
+
+      <div class="gallery" data-reveal>
+        <ul class="gallery__track" aria-label="Shokoban screenshots">
+          <li><button type="button" class="shot"><img src="assets/shokoban/shot1.webp" alt="Shokoban main menu" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/shokoban/shot2.webp" alt="A big Shokoban level with many crates" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/shokoban/shot3.webp" alt="Shokoban level select" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/shokoban/shot4.webp" alt="Shokoban level 120" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/shokoban/shot5.webp" alt="Shokoban level 1" width="1280" height="720" loading="lazy"></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------- moto rush -->
+    <section id="motorush" class="game game--motorush" aria-labelledby="motorush-title">
+      <div class="game__inner game__inner--flip">
+        <div class="phone" data-reveal>
+          <div class="phone__screen">
+            <video src="assets/motorush/reel.mp4" poster="assets/motorush/reel-poster.webp" muted loop playsinline preload="metadata" aria-label="Moto Rush gameplay video"></video>
+          </div>
+          <button class="sound" type="button" aria-pressed="false"><span class="sound__icon" aria-hidden="true">🔇</span><span class="sound__label">Sound on</span></button>
+        </div>
+
+        <div class="game__copy" data-reveal>
+          <div class="game__head">
+            <img class="game__icon" src="assets/motorush/icon.webp" alt="Moto Rush app icon" width="96" height="96">
+            <h2 id="motorush-title" class="game__logo"><img src="assets/motorush/logo.webp" alt="Moto Rush" width="900" height="167"></h2>
+          </div>
+          <ul class="chips" aria-label="At a glance">
+            <li>Racing</li><li>8 worlds</li><li>Stunts</li><li>Offline</li>
+          </ul>
+          <p class="game__pitch">Twist the throttle, hit the ramp and FLY! Race rivals, dodge spinning saws and wrecking balls, chain backflips and nail perfect landings from sunny canyons to glowing crystal caves.</p>
+          <ul class="features">
+            <li><span class="features__ico" aria-hidden="true">🏁</span><span><b>16 races</b> against rivals who keep getting faster</span></li>
+            <li><span class="features__ico" aria-hidden="true">🔥</span><span><b>Mega jumps & flips</b> with slow-motion landings</span></li>
+            <li><span class="features__ico" aria-hidden="true">🌋</span><span><b>8 wild worlds, 82 levels</b> and 21 challenges</span></li>
+            <li><span class="features__ico" aria-hidden="true">🔧</span><span><b>Upgrade & paint</b> your bike in the garage</span></li>
+          </ul>
+          <a class="badge" href="https://play.google.com/store/apps/details?id=com.twodStudio.motorush" target="_blank" rel="noopener">
+            <img src="assets/google-play-badge.png" alt="Get Moto Rush on Google Play" width="282" height="84">
+          </a>
+        </div>
+      </div>
+
+      <div class="gallery" data-reveal>
+        <ul class="gallery__track" aria-label="Moto Rush screenshots">
+          <li><button type="button" class="shot"><img src="assets/motorush/shot1.webp" alt="Moto Rush race against rivals in the desert" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/motorush/shot2.webp" alt="A mega flip over the canyon" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/motorush/shot3.webp" alt="Riding through the Crystal Caves" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/motorush/shot4.webp" alt="Dodging wrecking balls" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/motorush/shot5.webp" alt="Coral Coast world" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/motorush/shot6.webp" alt="Painting the bike in the garage" width="1280" height="720" loading="lazy"></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------ hello -->
+    <section class="hello" aria-labelledby="hello-title">
+      <div class="hello__card" data-reveal>
+        <img class="hello__mark" src="assets/mark-512.png" alt="" width="88" height="88">
+        <h2 id="hello-title" class="display display--sm">Say hi!</h2>
+        <p>Got an idea for a level, found a bug or just want to say you beat level 510? Messages are always welcome.</p>
+        <div class="hello__cta">
+          <a class="btn btn--ink" href="mailto:foueddhaya@yahoo.com">Send me an email</a>
+          <a class="btn btn--ghost" href="https://play.google.com/store/apps/dev?id=6853361194608370861" target="_blank" rel="noopener">All games on Google Play</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__inner">
+      <a class="brand brand--foot" href="#top">
+        <img src="assets/favicon.png" alt="" width="28" height="28">
+        <span>2D Game Studio</span>
+      </a>
+      <nav class="foot__links" aria-label="Footer">
+        <a href="https://play.google.com/store/apps/details?id=com.twodStudio.shokoban" target="_blank" rel="noopener">Shokoban</a>
+        <a href="https://play.google.com/store/apps/details?id=com.twodStudio.motorush" target="_blank" rel="noopener">Moto Rush</a>
+        <a href="motorush/privacy.html">Moto Rush privacy policy</a>
+        <a href="mailto:foueddhaya@yahoo.com">Contact</a>
+      </nav>
+      <p class="foot__small">© <span data-year>2026</span> Foued Dhaya · This site uses no cookies and no tracking.<br>
+        Google Play and the Google Play logo are trademarks of Google LLC.</p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Screenshot">
+    <form method="dialog"><button class="lightbox__close" aria-label="Close">✕</button></form>
+    <img alt="">
+  </dialog>
+</body>
+</html>
