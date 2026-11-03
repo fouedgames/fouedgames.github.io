@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>2D Game Studio · Shokoban & Moto Rush</title>
-  <meta name="description" content="Free mobile games by Foued Dhaya: Shokoban, a box-pushing puzzle game with 510 levels, and Moto Rush, a stunt bike racing game across 8 wild worlds. Get them on Google Play.">
+  <title>2D Game Studio · Shokoban, Moto Rush & Sneaky Snout</title>
+  <meta name="description" content="Free mobile games by Foued Dhaya: Shokoban, a box-pushing puzzle game with 510 levels; Moto Rush, a stunt bike racing game across 8 wild worlds; and Sneaky Snout, a fox platformer with 150 levels and 10 bosses. Get them on Google Play.">
   <link rel="canonical" href="https://fouedgames.github.io/">
   <meta name="theme-color" content="#FFF7EC" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#16111F" media="(prefers-color-scheme: dark)">
@@ -13,8 +13,8 @@
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://fouedgames.github.io/">
-  <meta property="og:title" content="2D Game Studio · Shokoban & Moto Rush">
-  <meta property="og:description" content="Free mobile games: brain-teasing puzzles and wild stunt racing. Get them on Google Play.">
+  <meta property="og:title" content="2D Game Studio · Shokoban, Moto Rush & Sneaky Snout">
+  <meta property="og:description" content="Free mobile games: brain-teasing puzzles, wild stunt racing and a foxy platformer. Get them on Google Play.">
   <meta property="og:image" content="https://fouedgames.github.io/assets/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -34,8 +34,9 @@
         <span>2D Game Studio</span>
       </a>
       <nav aria-label="Games">
-        <a href="#shokoban" class="pill pill--violet">Shokoban</a>
-        <a href="#motorush" class="pill pill--sun">Moto Rush</a>
+        <a href="#shokoban" class="pill pill--violet" aria-label="Shokoban"><img src="assets/shokoban/icon.webp" alt="" width="24" height="24"><span>Shokoban</span></a>
+        <a href="#motorush" class="pill pill--sun" aria-label="Moto Rush"><img src="assets/motorush/icon.webp" alt="" width="24" height="24"><span>Moto Rush</span></a>
+        <a href="#sneakysnout" class="pill pill--leaf" aria-label="Sneaky Snout"><img src="assets/sneakysnout/icon.webp" alt="" width="24" height="24"><span>Sneaky Snout</span></a>
       </nav>
     </div>
   </header>
@@ -45,6 +46,7 @@
     <section class="hero">
       <div class="hero__float hero__float--a" aria-hidden="true"><img src="assets/shokoban/icon.webp" alt="" width="132" height="132"></div>
       <div class="hero__float hero__float--b" aria-hidden="true"><img src="assets/motorush/icon.webp" alt="" width="132" height="132"></div>
+      <div class="hero__float hero__float--c" aria-hidden="true"><img src="assets/sneakysnout/icon.webp" alt="" width="132" height="132"></div>
       <span class="hero__dot hero__dot--1" aria-hidden="true"></span>
       <span class="hero__dot hero__dot--2" aria-hidden="true"></span>
       <span class="hero__dot hero__dot--3" aria-hidden="true"></span>
@@ -55,10 +57,11 @@
           <span>Small games.</span>
           <span class="grad">Big fun!</span>
         </h1>
-        <p class="lead">Brain-teasing puzzles and wild stunt racing. Free to play, quick to pick up and made to put a smile on your face.</p>
+        <p class="lead">Brain-teasing puzzles, wild stunt racing and a foxy platformer. Free to play, quick to pick up and made to put a smile on your face.</p>
         <div class="hero__cta">
           <a class="btn btn--violet" href="#shokoban">Play Shokoban</a>
           <a class="btn btn--sun" href="#motorush">Play Moto Rush</a>
+          <a class="btn btn--leaf" href="#sneakysnout">Play Sneaky Snout</a>
         </div>
         <ul class="perks" aria-label="Good to know">
           <li><span aria-hidden="true">🎁</span> Free</li>
@@ -156,12 +159,57 @@
       </div>
     </section>
 
+    <!-- ----------------------------------------------------- sneaky snout -->
+    <section id="sneakysnout" class="game game--sneakysnout" aria-labelledby="sneakysnout-title">
+      <div class="game__inner">
+        <div class="phone" data-reveal>
+          <div class="phone__screen">
+            <video src="assets/sneakysnout/reel.mp4" poster="assets/sneakysnout/reel-poster.webp" muted loop playsinline preload="metadata" aria-label="Sneaky Snout gameplay video"></video>
+          </div>
+          <button class="sound" type="button" aria-pressed="false"><span class="sound__icon" aria-hidden="true">🔇</span><span class="sound__label">Sound on</span></button>
+        </div>
+
+        <div class="game__copy" data-reveal>
+          <div class="game__head">
+            <img class="game__icon" src="assets/sneakysnout/icon.webp" alt="Sneaky Snout app icon" width="96" height="96">
+            <h2 id="sneakysnout-title" class="game__logo"><img src="assets/sneakysnout/logo.webp" alt="Sneaky Snout" width="900" height="126"></h2>
+          </div>
+          <ul class="chips" aria-label="At a glance">
+            <li>Platformer</li><li>150 levels</li><li>10 bosses</li><li>Offline</li>
+          </ul>
+          <p class="game__pitch">Meet Sneaky Snout, the quickest little fox in the meadow! Run, jump, stomp and shoot through 150 hand-built levels in 10 colourful worlds, grab every cherry and melon along the way and take down 10 big bosses, from Grumble Oak to the Iron King.</p>
+          <ul class="features">
+            <li><span class="features__ico" aria-hidden="true">🌍</span><span><b>10 worlds, 150 levels</b>, each world ending in a boss fight</span></li>
+            <li><span class="features__ico" aria-hidden="true">🎁</span><span><b>Surprises</b>: fruit showers, golden fruit and mystery boxes</span></li>
+            <li><span class="features__ico" aria-hidden="true">🌦️</span><span><b>Sunsets, night runs</b>, rain, snow and thunderstorms</span></li>
+            <li><span class="features__ico" aria-hidden="true">⭐</span><span><b>3 stars per level</b>: the flag, 3 hidden gems and the par time</span></li>
+          </ul>
+          <p class="soon"><span class="soon__dot" aria-hidden="true"></span>Coming soon on Google Play</p>
+          <!-- Once the listing is live, replace the line above with the badge:
+          <a class="badge" href="https://play.google.com/store/apps/details?id=com.twodStudio.sneakysnout" target="_blank" rel="noopener">
+            <img src="assets/google-play-badge.png" alt="Get Sneaky Snout on Google Play" width="282" height="84">
+          </a> -->
+        </div>
+      </div>
+
+      <div class="gallery" data-reveal>
+        <ul class="gallery__track" aria-label="Sneaky Snout screenshots">
+          <li><button type="button" class="shot"><img src="assets/sneakysnout/shot1.webp" alt="A fruit shower in Sunny Meadow" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/sneakysnout/shot2.webp" alt="The Storm Roc boss fight in the Sky Kingdom" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/sneakysnout/shot3.webp" alt="Lava pits and fireballs in Molten Mountain" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/sneakysnout/shot4.webp" alt="Laser gates in the Crystal Caverns" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/sneakysnout/shot5.webp" alt="Haunted Hollow by night" width="1280" height="720" loading="lazy"></button></li>
+          <li><button type="button" class="shot"><img src="assets/sneakysnout/shot6.webp" alt="A perfect run with three stars" width="1280" height="720" loading="lazy"></button></li>
+        </ul>
+      </div>
+    </section>
+
     <!-- ------------------------------------------------------------ hello -->
     <section class="hello" aria-labelledby="hello-title">
       <div class="hello__card" data-reveal>
         <img class="hello__mark" src="assets/mark-512.png" alt="" width="88" height="88">
         <h2 id="hello-title" class="display display--sm">Say hi!</h2>
-        <p>Got an idea for a level, found a bug or just want to say you beat level 510? Messages are always welcome.</p>
+        <p>Got an idea for a level, found a bug or just want to say you beat level 510 or the Iron King? Messages are always welcome.</p>
         <div class="hello__cta">
           <a class="btn btn--ink" href="https://docs.google.com/forms/d/e/1FAIpQLSdBKHIhfraKh7cckiqnkRjD1-rRTgdZFgCeiCtnv3lo74HKqQ/viewform?usp=sf_link" target="_blank" rel="noopener">Contact us</a>
           <a class="btn btn--ghost" href="https://play.google.com/store/apps/dev?id=6853361194608370861" target="_blank" rel="noopener">All games on Google Play</a>
@@ -179,6 +227,7 @@
       <nav class="foot__links" aria-label="Footer">
         <a href="https://play.google.com/store/apps/details?id=com.twodStudio.shokoban" target="_blank" rel="noopener">Shokoban</a>
         <a href="https://play.google.com/store/apps/details?id=com.twodStudio.motorush" target="_blank" rel="noopener">Moto Rush</a>
+        <a href="#sneakysnout">Sneaky Snout</a>
         <a href="motorush/privacy.html">Moto Rush privacy policy</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBKHIhfraKh7cckiqnkRjD1-rRTgdZFgCeiCtnv3lo74HKqQ/viewform?usp=sf_link" target="_blank" rel="noopener">Contact</a>
       </nav>

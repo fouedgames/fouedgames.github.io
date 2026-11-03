@@ -1,4 +1,4 @@
-/* 2D Game Studio: friendly landing page for Shokoban and Moto Rush.
+/* 2D Game Studio: friendly landing page for Shokoban, Moto Rush and Sneaky Snout.
    Display font: Luckiest Guy by Astigmatic (Apache License 2.0), self-hosted so the
    page makes no third-party requests. */
 
@@ -21,6 +21,8 @@
   --violet-deep: #2A1A57;
   --sky: #3BA7FF;
   --mint: #2BD4A4;
+  --leaf: #2FA84F;
+  --leaf-deep: #1F7A3F;
   --shadow: 0 18px 40px -18px rgba(36, 26, 58, .35);
   --radius: 28px;
   --display: "Luckiest Guy", "Arial Rounded MT Bold", system-ui, sans-serif;
@@ -90,14 +92,17 @@ b { font-weight: 800; }
 .brand img { border-radius: 10px; margin-top: -3px; }
 .nav nav { display: flex; gap: 8px; }
 .pill {
+  display: inline-flex; align-items: center; gap: 8px;
   text-decoration: none; font-weight: 800; font-size: 15px;
-  padding: 8px 14px; border-radius: 999px; color: #fff;
+  padding: 6px 14px 6px 7px; border-radius: 999px; color: #fff;
   transition: transform .15s ease, box-shadow .15s ease;
   box-shadow: 0 4px 0 rgba(0, 0, 0, .18);
 }
+.pill img { width: 24px; height: 24px; border-radius: 8px; }
 .pill:hover { transform: translateY(-2px); }
 .pill--violet { background: var(--violet); }
 .pill--sun { background: linear-gradient(135deg, #FF9F2E, var(--coral)); }
+.pill--leaf { background: linear-gradient(135deg, #4CCB6A, #1E8F45); }
 
 /* ---------------------------------------------------------------- hero -- */
 .hero {
@@ -108,6 +113,7 @@ b { font-weight: 800; }
     radial-gradient(60% 55% at 15% 10%, rgba(255, 184, 77, .45), transparent 70%),
     radial-gradient(50% 50% at 90% 20%, rgba(124, 77, 255, .28), transparent 70%),
     radial-gradient(60% 60% at 60% 100%, rgba(59, 167, 255, .25), transparent 70%),
+    radial-gradient(45% 45% at 8% 92%, rgba(47, 168, 79, .22), transparent 70%),
     var(--bg);
 }
 .hero__copy { position: relative; max-width: 980px; margin: 0 auto; }
@@ -137,6 +143,7 @@ b { font-weight: 800; }
 .btn:active { transform: translateY(3px); box-shadow: 0 2px 0 rgba(0, 0, 0, .22); }
 .btn--violet { background: linear-gradient(180deg, #9673FF, var(--violet)); }
 .btn--sun { background: linear-gradient(180deg, #FFC15E, #FF8A3D); }
+.btn--leaf { background: linear-gradient(180deg, #58D977, #23A24F); }
 .btn--ink { background: var(--ink); color: var(--bg); }
 .btn--ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 3px var(--ink); }
 .btn--ghost:active { box-shadow: inset 0 0 0 3px var(--ink); }
@@ -156,10 +163,11 @@ b { font-weight: 800; }
 .hero__float img { width: 100%; height: auto; }
 .hero__float--a { left: max(3vw, 12px); top: 22%; rotate: -10deg; }
 .hero__float--b { right: max(3vw, 12px); top: 52%; rotate: 9deg; animation-delay: -3s; }
+.hero__float--c { left: max(9vw, 40px); top: 64%; rotate: 7deg; animation-delay: -1.5s; }
 .hero__dot { position: absolute; z-index: -1; border-radius: 50%; animation: bob 7s ease-in-out infinite; }
 .hero__dot--1 { width: 22px; height: 22px; background: var(--mint); left: 22%; top: 12%; }
 .hero__dot--2 { width: 14px; height: 14px; background: var(--coral); right: 20%; top: 18%; animation-delay: -2s; }
-.hero__dot--3 { width: 30px; height: 30px; background: var(--sun); left: 12%; bottom: 22%; animation-delay: -4s; border-radius: 9px; rotate: 18deg; }
+.hero__dot--3 { width: 30px; height: 30px; background: var(--sun); right: 12%; bottom: 16%; animation-delay: -4s; border-radius: 9px; rotate: 18deg; }
 @keyframes bob { 50% { translate: 0 -16px; } }
 .hero__wave { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 70px; fill: var(--violet-deep); }
 
@@ -191,8 +199,16 @@ b { font-weight: 800; }
   -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 64' preserveAspectRatio='none'%3E%3Cpath d='M0 34 C 240 70 480 0 720 28 C 960 56 1200 10 1440 34 L1440 64 L0 64 Z'/%3E%3C/svg%3E") bottom / 100% 100% no-repeat;
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 64' preserveAspectRatio='none'%3E%3Cpath d='M0 34 C 240 70 480 0 720 28 C 960 56 1200 10 1440 34 L1440 64 L0 64 Z'/%3E%3C/svg%3E") bottom / 100% 100% no-repeat;
 }
+.game--sneakysnout {
+  color: #F1FBEF;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 200' preserveAspectRatio='none'%3E%3Cpath d='M0 200 L0 120 C 180 60 300 150 480 110 C 660 70 780 160 960 120 C 1140 80 1280 150 1440 100 L1440 200 Z' fill='%23ffffff' fill-opacity='.10'/%3E%3Cpath d='M0 200 L0 160 C 200 120 360 190 560 150 C 760 110 900 190 1100 160 C 1260 136 1360 170 1440 150 L1440 200 Z' fill='%23ffffff' fill-opacity='.14'/%3E%3C/svg%3E") bottom / 100% 200px no-repeat,
+    radial-gradient(40% 45% at 88% 10%, rgba(255, 210, 63, .3), transparent 70%),
+    linear-gradient(180deg, var(--leaf-deep) 0%, #2C9A4E 55%, #3AAE5A 100%);
+}
 .game--shokoban::after { background: #5FC8FF; }
-.game--motorush::after { background: var(--bg); }
+.game--motorush::after { background: var(--leaf-deep); }
+.game--sneakysnout::after { background: var(--bg); }
 
 .game--motorush::before { /* the sun */
   content: ""; position: absolute; right: 8%; top: 9%; width: 150px; height: 150px; border-radius: 50%;
@@ -209,10 +225,12 @@ b { font-weight: 800; }
 .chips li { padding: 5px 13px; border-radius: 999px; font-weight: 800; font-size: 14px; }
 .game--shokoban .chips li { background: rgba(255, 255, 255, .1); box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .16); }
 .game--motorush .chips li { background: rgba(255, 255, 255, .55); box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .8); }
+.game--sneakysnout .chips li { background: rgba(255, 255, 255, .14); box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .22); }
 
 .game__pitch { font-size: 18.5px; margin: 0 0 22px; max-width: 560px; }
 .game--shokoban .game__pitch { color: #DCD2F7; }
 .game--motorush .game__pitch { color: #2E3560; }
+.game--sneakysnout .game__pitch { color: #DCF3DA; }
 
 .features { list-style: none; padding: 0; margin: 0 0 28px; display: grid; gap: 12px; }
 .features li { display: flex; align-items: center; gap: 14px; font-size: 17px; }
@@ -222,10 +240,26 @@ b { font-weight: 800; }
 }
 .game--shokoban .features__ico { background: rgba(255, 184, 77, .16); box-shadow: inset 0 0 0 2px rgba(255, 184, 77, .3); }
 .game--motorush .features__ico { background: rgba(255, 255, 255, .7); box-shadow: 0 4px 10px -4px rgba(29, 34, 64, .3); }
+.game--sneakysnout .features__ico { background: rgba(255, 210, 63, .18); box-shadow: inset 0 0 0 2px rgba(255, 210, 63, .36); }
 
 .badge { display: inline-block; border-radius: 12px; transition: transform .15s ease; }
 .badge:hover { transform: translateY(-3px) scale(1.02); }
 .badge img { width: 220px; height: auto; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .3)); }
+
+/* stands in for the Play badge until a game's listing is live */
+.soon {
+  display: inline-flex; align-items: center; gap: 12px; margin: 0;
+  padding: 13px 22px; border-radius: 18px; font-weight: 800; font-size: 16px;
+  background: rgba(255, 255, 255, .12); box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .25);
+}
+.soon__dot {
+  width: 12px; height: 12px; border-radius: 50%; background: var(--sun);
+  animation: ping 1.8s ease-out infinite;
+}
+@keyframes ping {
+  0% { box-shadow: 0 0 0 0 rgba(255, 184, 77, .6); }
+  70%, 100% { box-shadow: 0 0 0 10px rgba(255, 184, 77, 0); }
+}
 
 /* --------------------------------------------------------------- phone -- */
 .phone {
@@ -272,6 +306,7 @@ b { font-weight: 800; }
 .shot img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 .game--shokoban .gallery__track { scrollbar-color: rgba(255, 255, 255, .3) transparent; }
 .game--motorush .gallery__track { scrollbar-color: rgba(29, 34, 64, .35) transparent; }
+.game--sneakysnout .gallery__track { scrollbar-color: rgba(255, 255, 255, .3) transparent; }
 
 /* --------------------------------------------------------------- hello -- */
 .hello { padding: clamp(64px, 9vw, 110px) 20px; background: var(--bg); }
@@ -320,11 +355,16 @@ b { font-weight: 800; }
   .phone { margin-bottom: 18px; }
   .game--motorush::before { width: 100px; height: 100px; top: 3%; }
 }
+@media (max-width: 720px) {
+  .brand span { display: none; } /* three named pills need the room */
+}
 @media (max-width: 520px) {
   body { font-size: 16px; }
-  .brand span { display: none; }
-  .nav nav .pill { font-size: 14px; padding: 7px 12px; }
-  /* no room beside the headline: the two icons sit above it as a pair */
+  /* the pills shrink to the game icons; the links keep their aria-labels */
+  .pill { padding: 5px; }
+  .pill span { display: none; }
+  .pill img { width: 30px; height: 30px; border-radius: 10px; }
+  /* no room beside the headline: the three icons sit above it in a row */
   .hero { padding-top: 40px; }
   .hero__float { position: relative; inset: auto; display: inline-block; width: 78px; margin: 0 8px 20px; }
   .hero__dot--1 { top: 6%; left: 10%; }
